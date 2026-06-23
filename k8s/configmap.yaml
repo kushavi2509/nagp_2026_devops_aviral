@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-config
+  namespace: users-app
+data:
+  DB_HOST: "postgres-service"
+  DB_PORT: "5432"
+  DB_NAME: "usersdb"
+  DB_USER: "usersapp"
+  PORT: "3000"
